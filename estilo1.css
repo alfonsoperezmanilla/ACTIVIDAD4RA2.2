@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face{ 
+    font-family: "titulo";
+    src:url("fuente1.ttf");
+}
+
+@font-face{ 
+    font-family: "texto";
+    src:url("fuente2.ttf");
+}
+
+body{
+    background:#FFB8B8;
+}
+
+.cabecera{
+    padding-top: 10px;
+    padding-bottom: 35px;
+    font: 20px titulo;
+    text-shadow: 1px 1px 2px #000000;
+    color:#ffffff;
+    background:-webkit-linear-gradient(left, red 10%,#FFCD9D 60%, red);
+    border-radius: 5px 5px 5px 5px;
+}
+
+header, .main, footer{
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.main .articles{
+    width: 100%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article{
+    border: solid 7.5px red;
+    border-radius: 5px 5px 5px 5px;
+    padding: 60px;
+    padding-top: 15px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    background:-webkit-linear-gradient(right, white 50%,#e6e6e6 115%);
+    margin-bottom: 20px;
+    font: 100% texto;
+    text-align: justify;
+}
+
+
+footer{
+    width: 90%;
+    background:-webkit-linear-gradient(left, red 10%,#FFCD9D 60%, red);
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font: 10px texto;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 10px;
+}
+
+.copyright{
+    color: #C7C7C7;
+    font: 13px titulo;
+    padding-left: 25%;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 1000px;
+    }
+}
+
+/*------------------------------------------------estilo basico de página web------------------------------------------------*/
+
+#lienzo1{
+    border: 1px solid #f00;
+}
+
